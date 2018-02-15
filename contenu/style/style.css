@@ -1,5 +1,14 @@
-.carName{
-    font-family: 'sans-serif';
-    font-size: 35px;
-    color: red;
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.carContainer{
+    width: 30%;
+}
+
+.carImage{
+    width: 90%;
+    height: auto;
 }
