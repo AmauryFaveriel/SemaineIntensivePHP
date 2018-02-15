@@ -8,6 +8,7 @@
     <title>Document</title>
 </head>
 <body>
+<!-- va chercher la page admin.php afin de retourner à l'index-->
 <a href="admin.php">Annuler l'ajout</a>
 <form action="doadd.php" method="post" enctype="multipart/form-data">
     <label for="marque">Marque</label> <input type="text" name="marque"><br>
@@ -24,6 +25,7 @@
     <label for="prix">Prix</label> <input type="number" name="prix"><br>
     <label for="img">Image</label> <input type="file" name="img"><br>
     <input type="submit" value="Ajouter">
+    <!-- le bouton Ajouter (input) va submit (envoyer) à la database-->
 </form>
 
 </body>
