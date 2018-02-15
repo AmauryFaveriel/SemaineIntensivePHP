@@ -12,9 +12,9 @@ if(!isset($_POST['marque']) || !isset($_POST['modele']) || !isset($_POST['couleu
 require_once "connexion.php";
 $requete = "INSERT INTO
 `voitures`
-(`marque`, `modele`, `couleur`, `annee`, `gamme`, `paysdorigine`, `plaque`, `kilometrage`, `nbrPossesseur`, `vendeur`, `etat`, `quantite`, `prix`, `img`)
+(`marque`, `modele`, `couleur`, `annee`, `gamme`, `paysdorigine`, `plaque`, `kilometrage`, `nbrPossesseur`, `vendeur`, `etat`, `prix`, `img`)
 VALUES
-(:marque, :modele, :couleur, :annee, :gamme, :paysdorigine, :plaque, :kilometrage, :nbrPossesseur, :vendeur, :etat, :quantite, :prix, :img)
+(:marque, :modele, :couleur, :annee, :gamme, :paysdorigine, :plaque, :kilometrage, :nbrPossesseur, :vendeur, :etat, :prix, :img)
 ;";
 
 $uploadfile='img/'.$_FILES['img']['name'];
@@ -32,7 +32,6 @@ $stmt->bindValue(':kilometrage', htmlentities($_POST['kilometrage']));
 $stmt->bindValue(':nbrPossesseur', htmlentities($_POST['nbrPossesseur']));
 $stmt->bindValue(':vendeur', htmlentities($_POST['vendeur']));
 $stmt->bindValue(':etat', htmlentities($_POST['etat']));
-$stmt->bindValue(':quantite', htmlentities($_POST['quantite']));
 $stmt->bindValue(':prix', htmlentities($_POST['prix']));
 $stmt->bindValue(':img', htmlentities($_FILES['img']['name']));
 $stmt->execute();
