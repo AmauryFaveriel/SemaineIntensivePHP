@@ -41,7 +41,7 @@ $stmt->execute();
 
     <?php endwhile;?>
 </div>
-<a href="admin.php">Admin</a>
+<a href="login.php">Admin</a>
 
 </body>
 </html>
