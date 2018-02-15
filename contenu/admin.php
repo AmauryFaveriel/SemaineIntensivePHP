@@ -55,6 +55,7 @@ if (isset($_GET['error'])) { ?>
     </tr>
 
     <?php
+
     //Select informations needed into table 'voitures' to show page
     $requete ="SELECT
           `id`,
@@ -73,10 +74,12 @@ if (isset($_GET['error'])) { ?>
           FROM
           voitures
           ;";
+
     $stmt=$conn->prepare($requete);
     $stmt->execute();
     //Create html element for each element in database
     while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+
         <tr>
             <td><?=$row['marque']?></td>
             <td><?=$row['modele']?></td>
@@ -91,8 +94,10 @@ if (isset($_GET['error'])) { ?>
             <td><?=$row['etat']?></td>
             <td><?=$row['prix']?></td>
             <td>
+
                 <a href="delete.php?id=<?=$row['id']//Link to car delete page?>">Supprimer</a>
                 <a href="edit.php?id=<?=$row['id']//Link to car edit page?>">Modifier</a>
+
             </td>
         </tr>
     <?php endwhile;?>
@@ -100,7 +105,9 @@ if (isset($_GET['error'])) { ?>
 <hr />
 <!-- Link to change account value page -->
     <a href="changeAccount.php">Changer mes informations de connection</a><br>
+
 <!-- Link to index page -->
 <a href="index.php">Index</a>
+
 </body>
 </html>
