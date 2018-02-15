@@ -30,8 +30,10 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
 <!-- GESTION DES VOITURES -->
 <h2>Voitures</h2>
 <p>Bonjour <?=$rowAdmin['login']?></p>
+<!-- va chercher la page add.php afin de retourner à la page d'ajout-->
 <a href="add.php">Ajouter</a>
 <table style="width:100%;">
+    <!-- toute les colonnes (th) du tableau (tr) -->
     <tr>
         <th>Marque</th>
         <th>Modèle</th>
@@ -49,6 +51,8 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
     </tr>
 
     <?php
+    // ici on crée la variable requête et on lui dit de sélectionner toutes les informations de (FROM) la table voitures.
+
     $requete ="SELECT
           `id`,
           `marque`,
@@ -66,9 +70,13 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
           FROM
           voitures
           ;";
-    $stmt=$conn->prepare($requete);
-    $stmt->execute();
-    while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
+    $stmt=$conn->prepare($requete);//stmt va récupéré la variable connexion et donc les informations qui sont dans la
+    // base de données (prépare les informations et ensuite execute)
+
+    $stmt->execute();  // il execute = récupération des informations dans la variable requête provenant de la base de donnée
+
+    while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>  <!-- on crée un boucle permettant d'afficher les informations une à une -->
+
         <tr>
             <td><?=$row['marque']?></td>
             <td><?=$row['modele']?></td>
@@ -83,7 +91,8 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
             <td><?=$row['etat']?></td>
             <td><?=$row['prix']?></td>
             <td>
-                <a href="delete.php?id=<?=$row['id']?>">Supprimer</a>
+                <a href="delete.php?id=<?=$row['id']?>">Supprimer</a> <!-- lien permettant de suprimer et modifier chaque ligne.-->
+
                 <a href="edit.php?id=<?=$row['id']?>">Modifier</a>
             </td>
         </tr>
@@ -93,6 +102,6 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
 <!-- GESTION DES PIECES -->
 
     <a href="changeAccount.php">Changer mes informations de connection</a><br>
-<a href="index.php">Index</a>
+<a href="index.php">Index</a> <!-- lien permettant de voir la page de présentation des voitures -->
 </body>
 </html>
