@@ -21,7 +21,6 @@
     <label for="nbrPossesseur">Nombre de possesseurs</label> <input type="number" name="nbrPossesseur"><br>
     <label for="vendeur">Vendeur</label> <input type="text" name="vendeur"><br>
     <label for="etat">État</label> <input type="text" name="etat"><br>
-    <label for="quantite">Quantité</label> <input type="number" name="quantite"><br>
     <label for="prix">Prix</label> <input type="number" name="prix"><br>
     <label for="img">Image</label> <input type="file" name="img"><br>
     <input type="submit" value="Ajouter">

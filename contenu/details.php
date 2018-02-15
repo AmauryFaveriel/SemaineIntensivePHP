@@ -23,7 +23,6 @@ $requete = 'SELECT
   `nbrPossesseur`,
   `vendeur`,
   `etat`,
-  `quantite`,
   `prix`,
   `img`
   FROM

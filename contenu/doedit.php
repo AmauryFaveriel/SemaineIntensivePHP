@@ -25,7 +25,6 @@ SET
 `nbrPossesseur` = :nbrPossesseur,
 `vendeur` = :vendeur,
 `etat` = :etat,
-`quantite`= :quantite,
 `prix` = :prix,
 `img` = :img
 WHERE
@@ -46,7 +45,6 @@ SET
 `nbrPossesseur` = :nbrPossesseur,
 `vendeur` = :vendeur,
 `etat` = :etat,
-`quantite`= :quantite,
 `prix` = :prix
 WHERE
 id = :id
@@ -70,7 +68,6 @@ $stmt->bindValue(':kilometrage', htmlentities($_POST['kilometrage']));
 $stmt->bindValue(':nbrPossesseur', htmlentities($_POST['nbrPossesseur']));
 $stmt->bindValue(':vendeur', htmlentities($_POST['vendeur']));
 $stmt->bindValue(':etat', htmlentities($_POST['etat']));
-$stmt->bindValue(':quantite', htmlentities($_POST['quantite']));
 $stmt->bindValue(':prix', htmlentities($_POST['prix']));
 $stmt->bindValue(':id', htmlentities($_POST['id']));
 if(isset($_FILES['img']['name'])){

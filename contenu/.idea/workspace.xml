@@ -23,6 +23,24 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="ok@localhost" type="feb32156:DbDataSourceImpl" />
       </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ok@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ok@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ok: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="ok@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="ok: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="adminLogin: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
     </expand>
     <select />
   </component>
@@ -31,22 +49,10 @@
       <file leaf-file-name="doadd.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doadd.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="380" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="380" />
+            <state relative-caret-position="594">
+              <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
               <folding>
-                <marker date="1518647980644" expanded="true" signature="605:928" ph="INSERT INTO `voitures`... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/edit.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
-              <folding>
-                <marker date="1518647980644" expanded="true" signature="206:428" ph="SELECT `id`,... voitures" />
+                <marker date="1518698006201" expanded="true" signature="605:905" ph="INSERT INTO `voitures`... " />
               </folding>
             </state>
           </provider>
@@ -55,17 +61,17 @@
       <file leaf-file-name="database.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../database.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="324">
+              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-284">
+            <state relative-caret-position="-216">
               <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
               <folding>
                 <marker date="1518648934670" expanded="true" signature="48:139" ph="SELECT `id`,... voitures" />
@@ -74,46 +80,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="styleDetails.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/styleDetails.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="details.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/details.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
+            <state relative-caret-position="432">
+              <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
               <folding>
-                <marker date="1518648893646" expanded="true" signature="218:449" ph="SELECT `id`,... voitures" />
+                <marker date="1518698006281" expanded="true" signature="218:435" ph="SELECT `id`,... voitures" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style/style.css">
+      <file leaf-file-name="admin.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-              <folding />
+            <state relative-caret-position="540">
+              <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+              <folding>
+                <marker date="1518698070213" expanded="true" signature="134:166" ph="SELECT `logi... " />
+                <marker date="1518698070213" expanded="true" signature="1162:1471" ph="SELECT `id`,... voitures" />
+                <marker date="1518698070213" expanded="true" signature="1617:1642" ph="..." />
+                <marker date="1518698070213" expanded="true" signature="2140:2188" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/admin.php">
+      <file leaf-file-name="doChangePassword.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doChangePassword.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+            <state relative-caret-position="540">
+              <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
               <folding>
-                <marker date="1518647980644" expanded="true" signature="981:1312" ph="SELECT `id`,... voitures" />
-                <marker date="1518647980644" expanded="true" signature="2455:2559" ph="SELECT id, n... pieces" />
+                <marker date="1518697622034" expanded="true" signature="263:298" ph="SELECT `pass... adminLogin" />
+                <marker date="1518697622034" expanded="true" signature="459:505" ph="UPDATE `adminLogin`... " />
               </folding>
             </state>
           </provider>
@@ -122,11 +123,23 @@
       <file leaf-file-name="doedit.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/doedit.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
-              <caret line="36" column="3" lean-forward="false" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+            <state relative-caret-position="1242">
+              <caret line="69" column="56" lean-forward="false" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
               <folding>
-                <marker date="1518647980644" expanded="true" signature="608:948" ph="UPDATE `voitures`... " />
-                <marker date="1518647980644" expanded="true" signature="978:1304" ph="UPDATE `voitures`... " />
+                <marker date="1518698006257" expanded="true" signature="608:925" ph="UPDATE `voitures`... " />
+                <marker date="1518698006257" expanded="true" signature="955:1258" ph="UPDATE `voitures`... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="changeAccount.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/changeAccount.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+              <folding>
+                <marker date="1518697043315" expanded="true" signature="129:161" ph="SELECT `logi... adminLogin" />
               </folding>
             </state>
           </provider>
@@ -135,9 +148,21 @@
       <file leaf-file-name="add.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/add.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="396">
+              <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="doChangeLogin.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/doChangeLogin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+              <folding>
+                <marker date="1518697106890" expanded="true" signature="221:261" ph="UPDATE `adminLogin`... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -161,16 +186,20 @@
         <option value="$PROJECT_DIR$/connexion.php" />
         <option value="$PROJECT_DIR$/delete.php" />
         <option value="$PROJECT_DIR$/dodelete.php" />
-        <option value="$PROJECT_DIR$/admin.php" />
-        <option value="$PROJECT_DIR$/doadd.php" />
-        <option value="$PROJECT_DIR$/add.php" />
-        <option value="$PROJECT_DIR$/doedit.php" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/edit.php" />
         <option value="$PROJECT_DIR$/style/styleDetails.css" />
-        <option value="$PROJECT_DIR$/details.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/changeAccount.php" />
+        <option value="$PROJECT_DIR$/style/doChangeLogin.php" />
+        <option value="$PROJECT_DIR$/doChangeLogin.php" />
+        <option value="$PROJECT_DIR$/doChangePassword.php" />
+        <option value="$PROJECT_DIR$/doedit.php" />
+        <option value="$PROJECT_DIR$/doadd.php" />
+        <option value="$PROJECT_DIR$/add.php" />
+        <option value="$PROJECT_DIR$/details.php" />
         <option value="$PROJECT_DIR$/../database.sql" />
+        <option value="$PROJECT_DIR$/admin.php" />
       </list>
     </option>
   </component>
@@ -251,6 +280,12 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../database.sql" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -283,12 +318,12 @@
       <workItem from="1518607615039" duration="864000" />
       <workItem from="1518608507345" duration="7623000" />
       <workItem from="1518648117655" duration="979000" />
-      <workItem from="1518685563856" duration="555000" />
+      <workItem from="1518685563856" duration="4883000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28539000" />
+    <option name="totallyTimeSpent" value="32867000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1984" y="-11" width="1857" height="1092" extended-state="6" />
@@ -345,55 +380,13 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/delete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="208:285" ph="SELECT `id`,... voitures" />
-            <marker date="1518647980644" expanded="true" signature="208:304" ph="SELECT `id`,... voitures" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doadd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="605:928" ph="INSERT INTO `voitures`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="666">
-          <caret line="37" column="73" lean-forward="false" selection-start-line="37" selection-start-column="73" selection-end-line="37" selection-end-column="73" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="206:428" ph="SELECT `id`,... voitures" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="21" lean-forward="false" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="981:1312" ph="SELECT `id`,... voitures" />
-            <marker date="1518647980644" expanded="true" signature="2455:2559" ph="SELECT id, n... pieces" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/doedit.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="828">
           <caret line="46" column="64" lean-forward="false" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="608:948" ph="UPDATE `voitures`... " />
-            <marker date="1518647980644" expanded="true" signature="978:1304" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="608:925" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="955:1258" ph="UPDATE `voitures`... " />
           </folding>
         </state>
       </provider>
@@ -430,7 +423,7 @@
         <state relative-caret-position="468">
           <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="605:928" ph="INSERT INTO `voitures`... " />
+            <marker date="1518698006201" expanded="true" signature="605:905" ph="INSERT INTO `voitures`... " />
           </folding>
         </state>
       </provider>
@@ -450,8 +443,10 @@
         <state relative-caret-position="648">
           <caret line="36" column="21" lean-forward="true" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="981:1312" ph="SELECT `id`,... voitures" />
-            <marker date="1518647980644" expanded="true" signature="2455:2559" ph="SELECT id, n... pieces" />
+            <marker date="1518698070213" expanded="true" signature="134:166" ph="SELECT `logi... " />
+            <marker date="1518698070213" expanded="true" signature="1162:1471" ph="SELECT `id`,... voitures" />
+            <marker date="1518698070213" expanded="true" signature="1617:1642" ph="..." />
+            <marker date="1518698070213" expanded="true" signature="2140:2188" ph="..." />
           </folding>
         </state>
       </provider>
@@ -461,8 +456,8 @@
         <state relative-caret-position="828">
           <caret line="46" column="64" lean-forward="false" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="608:948" ph="UPDATE `voitures`... " />
-            <marker date="1518647980644" expanded="true" signature="978:1304" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="608:925" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="955:1258" ph="UPDATE `voitures`... " />
           </folding>
         </state>
       </provider>
@@ -499,7 +494,7 @@
         <state relative-caret-position="468">
           <caret line="26" column="60" lean-forward="false" selection-start-line="26" selection-start-column="60" selection-end-line="26" selection-end-column="60" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="605:928" ph="INSERT INTO `voitures`... " />
+            <marker date="1518698006201" expanded="true" signature="605:905" ph="INSERT INTO `voitures`... " />
           </folding>
         </state>
       </provider>
@@ -534,8 +529,8 @@
         <state relative-caret-position="828">
           <caret line="46" column="64" lean-forward="false" selection-start-line="46" selection-start-column="64" selection-end-line="46" selection-end-column="64" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="608:948" ph="UPDATE `voitures`... " />
-            <marker date="1518647980644" expanded="true" signature="978:1304" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="608:925" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="955:1258" ph="UPDATE `voitures`... " />
           </folding>
         </state>
       </provider>
@@ -553,8 +548,10 @@
         <state relative-caret-position="738">
           <caret line="41" column="29" lean-forward="false" selection-start-line="41" selection-start-column="29" selection-end-line="41" selection-end-column="29" />
           <folding>
-            <marker date="1518647980644" expanded="true" signature="981:1312" ph="SELECT `id`,... voitures" />
-            <marker date="1518647980644" expanded="true" signature="2455:2559" ph="SELECT id, n... pieces" />
+            <marker date="1518698070213" expanded="true" signature="134:166" ph="SELECT `logi... " />
+            <marker date="1518698070213" expanded="true" signature="1162:1471" ph="SELECT `id`,... voitures" />
+            <marker date="1518698070213" expanded="true" signature="1617:1642" ph="..." />
+            <marker date="1518698070213" expanded="true" signature="2140:2188" ph="..." />
           </folding>
         </state>
       </provider>
@@ -630,79 +627,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doedit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="3" lean-forward="false" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="608:948" ph="UPDATE `voitures`... " />
-            <marker date="1518647980644" expanded="true" signature="978:1304" ph="UPDATE `voitures`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="981:1312" ph="SELECT `id`,... voitures" />
-            <marker date="1518647980644" expanded="true" signature="2455:2559" ph="SELECT id, n... pieces" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doadd.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="380" lean-forward="false" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="380" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="605:928" ph="INSERT INTO `voitures`... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/edit.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="35" selection-end-column="2" />
-          <folding>
-            <marker date="1518647980644" expanded="true" signature="206:428" ph="SELECT `id`,... voitures" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../database.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="16" lean-forward="false" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/details.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="48" column="6" lean-forward="false" selection-start-line="48" selection-start-column="6" selection-end-line="48" selection-end-column="6" />
-          <folding>
-            <marker date="1518648893646" expanded="true" signature="218:449" ph="SELECT `id`,... voitures" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,12 +643,120 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://table:/18dbe8c1/90e5a428-9682-4c42-92e2-c1e6fdee6246/ok.adminLogin">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/edit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-464">
+          <caret line="10" column="28" lean-forward="true" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <marker date="1518647980644" expanded="true" signature="206:428" ph="SELECT `id`,... voitures" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/changeAccount.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding>
+            <marker date="1518697043315" expanded="true" signature="129:161" ph="SELECT `logi... adminLogin" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doChangeLogin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="9" lean-forward="false" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <marker date="1518697106890" expanded="true" signature="221:261" ph="UPDATE `adminLogin`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doChangePassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="30" column="8" lean-forward="true" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+          <folding>
+            <marker date="1518697622034" expanded="true" signature="263:298" ph="SELECT `pass... adminLogin" />
+            <marker date="1518697622034" expanded="true" signature="459:505" ph="UPDATE `adminLogin`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doadd.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="594">
+          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding>
+            <marker date="1518698006201" expanded="true" signature="605:905" ph="INSERT INTO `voitures`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="22" column="70" lean-forward="false" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/details.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <marker date="1518698006281" expanded="true" signature="218:435" ph="SELECT `id`,... voitures" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../database.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doedit.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="69" column="56" lean-forward="false" selection-start-line="69" selection-start-column="56" selection-end-line="69" selection-end-column="56" />
+          <folding>
+            <marker date="1518698006257" expanded="true" signature="608:925" ph="UPDATE `voitures`... " />
+            <marker date="1518698006257" expanded="true" signature="955:1258" ph="UPDATE `voitures`... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-284">
+        <state relative-caret-position="-216">
           <caret line="0" column="5" lean-forward="true" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
           <folding>
             <marker date="1518648934670" expanded="true" signature="48:139" ph="SELECT `id`,... voitures" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="45" column="21" lean-forward="false" selection-start-line="45" selection-start-column="21" selection-end-line="45" selection-end-column="21" />
+          <folding>
+            <marker date="1518698070213" expanded="true" signature="134:166" ph="SELECT `logi... " />
+            <marker date="1518698070213" expanded="true" signature="1162:1471" ph="SELECT `id`,... voitures" />
+            <marker date="1518698070213" expanded="true" signature="1617:1642" ph="..." />
+            <marker date="1518698070213" expanded="true" signature="2140:2188" ph="..." />
           </folding>
         </state>
       </provider>

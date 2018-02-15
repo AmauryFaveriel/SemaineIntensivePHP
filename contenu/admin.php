@@ -6,6 +6,14 @@
  * Time: 09:33
  */
 require_once "connexion.php";
+$requeteAdmin = "SELECT
+`login`
+FROM
+`adminLogin`
+;";
+$stmtAdmin=$conn->prepare($requeteAdmin);
+$stmtAdmin->execute();
+$rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
 ?>
 <!doctype html>
 <html lang="en">
@@ -21,6 +29,7 @@ require_once "connexion.php";
 
 <!-- GESTION DES VOITURES -->
 <h2>Voitures</h2>
+<p>Bonjour <?=$rowAdmin['login']?></p>
 <a href="add.php">Ajouter</a>
 <table style="width:100%;">
     <tr>
@@ -35,7 +44,6 @@ require_once "connexion.php";
         <th>Nombre possesseurs</th>
         <th>Vendeur</th>
         <th>Etat</th>
-        <th>Quantité</th>
         <th>Prix</th>
         <th>Action</th>
     </tr>
@@ -54,7 +62,6 @@ require_once "connexion.php";
           `nbrPossesseur`,
           `vendeur`,
           `etat`,
-          `quantite`,
           `prix`
           FROM
           voitures
@@ -74,7 +81,6 @@ require_once "connexion.php";
             <td><?=$row['nbrPossesseur']?></td>
             <td><?=$row['vendeur']?></td>
             <td><?=$row['etat']?></td>
-            <td><?=$row['quantite']?></td>
             <td><?=$row['prix']?></td>
             <td>
                 <a href="delete.php?id=<?=$row['id']?>">Supprimer</a>
@@ -85,38 +91,8 @@ require_once "connexion.php";
 </table>
 <hr />
 <!-- GESTION DES PIECES -->
-<h2>Pieces</h2>
-<a href="#">Ajouter</a>
-<table>
-    <tr>
-        <th>Numéro de série</th>
-        <th>Stock</th>
-        <th>prix</th>
-        <th>Action</th>
-    </tr>
-    <?php
-    $requete ="SELECT
-          id,
-          numserie,
-          stock,
-          prix
-          FROM
-          pieces
-          ;";
-    $stmt=$conn->prepare($requete);
-    $stmt->execute();
-    while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
-        <tr>
-            <td><?=$row['type']?></td>
-            <td><?=$row['numserie']?></td>
-            <td><?=$row['stock']?></td>
-            <td>
-                <a href="#?id=<?=$row['id']?>">Supprimer</a>
-                <a href="#?id=<?=$row['id']?>">Modifier</a>
-            </td>
-        </tr>
-    <?php endwhile;?>
-</table>
+
+    <a href="changeAccount.php">Changer mes informations de connection</a><br>
 <a href="index.php">Index</a>
 </body>
 </html>
