@@ -30,10 +30,13 @@ VALUES
 ('Ferrari', '335 S', 'rouge', '1957', 'gtb-spider-lusso', 'italie', 'BL-654-LG', '7560', '1', 'Rossi', 'occasion', '2', '140000', 'FERRARI 335 S.jpg'),
 ('Rolls Royce', 'Phantom', 'noir', '1975', 'camargue-corniche-shadow', 'anglais', 'AA-555-AA', '10144', '1', 'Blandford', 'occasion', '2', '230000', 'ROLLS ROYCE PHANTOM.jpg');
 
-CREATE TABLE `pieces` (
+CREATE TABLE `adminLogin` (
   `id` INT AUTO_INCREMENT NOT NULL,
-  `numserie` VARCHAR(50) NOT NULL,
-  `stock` VARCHAR(3) NOT NULL,
-  `prix` VARCHAR(5) NOT NULL,
-  PRIMARY KEY (`id`)
+  `login` VARCHAR(50) NOT NULL,
+  `password` VARCHAR(50) NOT NULL
 );
+
+INSERT INTO
+`ok`.`adminLogin` (`login`, `password`)
+VALUES
+('admin', 'password');
