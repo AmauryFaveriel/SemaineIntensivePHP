@@ -5,10 +5,13 @@
  * Date: 13/02/18
  * Time: 14:12
  */
+//Test if id is define
 if(!isset($_GET['id'])) {
     header('Location:admin.php?noprovidededit');
 }
+//Connect to database
 require_once "connexion.php";
+//Select informations needed into table 'voitures' to show page
 $requete = 'SELECT
   `id`,
   `marque`,
@@ -22,7 +25,6 @@ $requete = 'SELECT
   `nbrPossesseur`,
   `vendeur`,
   `etat`,
-  `quantite`,
   `prix`
   FROM
   voitures
@@ -57,7 +59,6 @@ $row = $stmt->fetch(PDO::FETCH_ASSOC);
         <label for="nbrPossesseur">Nombre de possesseurs</label> <input type="number" name="nbrPossesseur" value="<?=$row['nbrPossesseur']?>"><br>
         <label for="vendeur">Vendeur</label> <input type="text" name="vendeur" value="<?=$row['vendeur']?>"><br>
         <label for="etat">État</label> <input type="text" name="etat" value="<?=$row['etat']?>"><br>
-        <label for="quantite">Quantité</label> <input type="number" name="quantite" value="<?=$row['quantite']?>"><br>
         <label for="prix">Prix</label> <input type="number" name="prix" value="<?=$row['prix']?>"><br>
         <label for="img">Image</label> <input type="file" name="img"><br>
         <input type="submit" value="Modifier">

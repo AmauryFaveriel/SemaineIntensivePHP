@@ -5,7 +5,9 @@
  * Date: 13/02/18
  * Time: 09:33
  */
+//Connect to database
 require_once "connexion.php";
+//Select informations needed into table 'adminLogin' to show page
 $requeteAdmin = "SELECT
 `login`
 FROM
@@ -25,6 +27,10 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
     <title>Document</title>
 </head>
 <body>
+<?php //Show error describe in URL
+if (isset($_GET['error'])) { ?>
+    <div class="error"><?=$_GET['error']?></div>
+<?php } ?>
 <h1>Panneau administrateur</h1>
 
 <!-- GESTION DES VOITURES -->
@@ -49,6 +55,7 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
     </tr>
 
     <?php
+    //Select informations needed into table 'voitures' to show page
     $requete ="SELECT
           `id`,
           `marque`,
@@ -68,6 +75,7 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
           ;";
     $stmt=$conn->prepare($requete);
     $stmt->execute();
+    //Create html element for each element in database
     while(false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)):?>
         <tr>
             <td><?=$row['marque']?></td>
@@ -83,16 +91,16 @@ $rowAdmin = $stmtAdmin->fetch(PDO::FETCH_ASSOC);
             <td><?=$row['etat']?></td>
             <td><?=$row['prix']?></td>
             <td>
-                <a href="delete.php?id=<?=$row['id']?>">Supprimer</a>
-                <a href="edit.php?id=<?=$row['id']?>">Modifier</a>
+                <a href="delete.php?id=<?=$row['id']//Link to car delete page?>">Supprimer</a>
+                <a href="edit.php?id=<?=$row['id']//Link to car edit page?>">Modifier</a>
             </td>
         </tr>
     <?php endwhile;?>
 </table>
 <hr />
-<!-- GESTION DES PIECES -->
-
+<!-- Link to change account value page -->
     <a href="changeAccount.php">Changer mes informations de connection</a><br>
+<!-- Link to index page -->
 <a href="index.php">Index</a>
 </body>
 </html>

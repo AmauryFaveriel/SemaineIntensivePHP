@@ -1,5 +1,7 @@
 <?php
+//Connect to database
 require_once "connexion.php";
+//Select informations needed into table 'voitures' to show page
 $requete = "SELECT
     `id`,
     `marque`,
@@ -18,30 +20,36 @@ $stmt->execute();
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="style/reset.css">
     <title>Motor Legend</title>
 </head>
 <body>
-<?php if (isset($_GET['error'])) { ?>
+
+<?php //Show error describe in URL
+if (isset($_GET['error'])) { ?>
     <div class="error"><?=$_GET['error']?></div>
 <?php } ?>
 
-<h1>Motor Legends</h1>
+<div class="containerAll">
+    <h1 class="title">Motor Legends</h1>
 
-<div class="container">
-    <?php while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
+    <div class="container">
+        <?php //Create html element for each element in database
+        while (false !== $row = $stmt->fetch(PDO::FETCH_ASSOC)): ?>
 
-        <div class="carContainer">
-            <a href="details.php?id=<?=$row['id']?>">
-                <img class="carImage" src="img/<?=$row['img']?>" alt="<?=$row['marque'].' '.$row['modele']?>">
-                <h2 class="firstCar-image-brand"><?=$row['marque'].' '.$row['modele']?></h2>
-                <h3><?=$row['annee']?></h3>
-            </a>
-        </div>
+            <div class="carContainer">
+                <a href="details.php?id=<?=$row['id']//Link to car detail page?>">
+                    <img class="carImage" src="img/<?=$row['img']?>" alt="<?=$row['marque'].' '.$row['modele']?>">
+                    <h2 class="carName"><?=$row['marque'].' '.$row['modele']?></h2>
+                    <h3 class="carName"><?=$row['annee']?></h3>
+                </a>
+            </div>
 
-    <?php endwhile;?>
+        <?php endwhile;?>
+    </div>
+    <!-- Link to admin connexion page -->
+    <a class="linkAdmin" href="login.php">Admin</a>
 </div>
-<a href="login.php">Admin</a>
 
 </body>
 </html>

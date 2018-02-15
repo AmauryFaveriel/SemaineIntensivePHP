@@ -1,3 +1,15 @@
+.containerAll{
+    padding: 20px;
+}
+
+.title{
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
 .container{
     display: flex;
     flex-wrap: wrap;
@@ -11,4 +23,18 @@
 .carImage{
     width: 90%;
     height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.carName{
+    font-family: sans-serif;
+    color: black;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.linkAdmin{
+    font-family: sans-serif;
+    font-size: 20px;
 }

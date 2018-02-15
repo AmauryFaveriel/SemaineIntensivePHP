@@ -5,11 +5,14 @@
  * Date: 14/02/18
  * Time: 23:43
  */
+//Test if id is define
 if (!isset($_GET['id'])) {
     headers('Location:index.php?noprovideddata');
     exit;
 }
+//Connect to database
 require_once "connexion.php";
+//Select informations needed into table 'voitures' to show page
 $requete = 'SELECT
   `id`,
   `marque`,
